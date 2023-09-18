@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,10 @@
           let changedY = 100;
       
         if(window.scrollY < changedY){
-          cssText = "opacity:" + window.scrollY/changedY + ";";
+          cssText = "background-color:rgba(255,255,255," + window.scrollY/changedY + "); color:rgb("+(255-window.scrollY)+","+(255-window.scrollY)+","+(255-window.scrollY)+");";
           changed_color_navbar.style.cssText = cssText;
         }else{
-          changed_color_navbar.style.cssText = "opacity: 1;";
+          changed_color_navbar.style.cssText = "background-color:rgba(255,255,255,1);color:black";
             }
         });
     
