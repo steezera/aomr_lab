@@ -19,9 +19,11 @@
 
           let cssText = null;
           let changedY = 100;
-      
+          let changing_text_color = null;
+          let each_rgb = 255 * ( 1 - window.scrollY/changedY );
         if(window.scrollY < changedY){
-          cssText = "background-color:rgba(255,255,255," + window.scrollY/changedY + "); color:rgb("+(255-window.scrollY)+","+(255-window.scrollY)+","+(255-window.scrollY)+");";
+            changing_text_color = "color:rgb("+each_rgb+","+each_rgb+","+each_rgb+");"
+          cssText = "background-color:rgba(255,255,255," + window.scrollY/changedY + ");" + changing_text_color;
           changed_color_navbar.style.cssText = cssText;
         }else{
           changed_color_navbar.style.cssText = "background-color:rgba(255,255,255,1);color:black";
