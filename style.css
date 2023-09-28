@@ -173,4 +173,35 @@ body, html {
     /* border: 2px solid #ccc;  */
 }
 
+.introduce img{
+    padding-left: 5vw;
+    width:500px;
 
+}
+.page.pc{
+    height: 70vh;
+}
+.page.mobile{
+    display: none;
+}
+
+@media(max-width:500px){
+    .introduce{
+        flex-direction: column;
+    }
+    .introduce img{
+        padding-left: 0px;
+        width:100%;
+        display: absolute;
+        z-index: 1;
+    }
+    .page.pc{
+        display: none;
+    }
+    .page.mobile{
+        display: block;
+    }
+    #page3{
+        z-index: -1;
+    }
+}
