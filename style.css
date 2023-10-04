@@ -155,9 +155,7 @@ body, html {
 }
 
 .menuitem {
-    display: flex;
     height: 100%;
-    /* border: 3px solid var(--clr-accent); */
     box-sizing: border-box;
     align-items: center;
     font-family: sans-serif;
