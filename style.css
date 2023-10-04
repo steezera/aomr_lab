@@ -193,9 +193,11 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .inner-writting{
     padding:5vw;
+    font-size:large;
 }
 
 @media(max-width:500px){
