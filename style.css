@@ -21,16 +21,17 @@ body, html {
 }
 
 .pages {
-    width: 100%;
-    height: 100%;
-    /* display: flex;
-    flex-direction: column; */
-    box-sizing: border-box;
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: border-box; */
 }
 
 .page {
-    width: 100%;
-    height: 100%;
+    width:100vw;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     padding: 0;
     color: var(--clr-light);
@@ -50,8 +51,6 @@ body, html {
     justify-content: center;
 }
 
-
-
 #page2{
     background-color: white;
 }
@@ -70,6 +69,7 @@ body, html {
 }
 
 .image-box {
+    display: absolute;
     width: 100%;
     height: 100%;
     background-image: url('https://wwwk.kangwon.ac.kr/DATA/bbs/21/20230831160609082rKE.jpg');
@@ -171,23 +171,36 @@ body, html {
     /* border: 2px solid #ccc;  */
 }
 
-.introduce img{
-    padding-left: 5vw;
+.whitebox{
     width:500px;
-
+    height: 70vh;
+}
+#wb1{
+    padding-left: 5vw;
+}
+#wb2{
+    padding-right: 5vw;
 }
 .page.pc{
     height: 70vh;
 }
-.page.mobile{
-    display: none;
+.introduce{
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+}
+.writting{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inner-writting{
+    padding:5vw;
 }
 
 @media(max-width:500px){
-    .introduce{
-        flex-direction: column;
-    }
-    .introduce img{
+
+    .whitebox{
         padding-left: 0px;
         width:100%;
         display: absolute;
@@ -195,9 +208,6 @@ body, html {
     }
     .page.pc{
         display: none;
-    }
-    .page.mobile{
-        display: block;
     }
     #page3{
         z-index: -1;

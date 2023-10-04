@@ -34,6 +34,7 @@
         </div>
     </div>
     
+
     <div class="pages">
         <div class="page" id="page1">
             <div class="image-box"></div>
@@ -48,28 +49,31 @@
         </div>
 
 
-        <div class="introduce" style="display: flex; height: 140vh;">
-            <div class="page mobile" id="page2" style="color:black">
-                첫페이지
+        <div class="introduce">
+            <div class="background" style="z-index: -1;position:absolute;width:100%">
+                <div class="page pc" id="page2" style="height: 70vh; color:black"></div>
+                <div class="page pc" id="page3" style="height: 70vh;"></div>
             </div>
-            <img src="./image/whitebox.png" alt="소개문구 옆에 놓을 그림"/>
-            <div class="write" style="z-index: -1;position:absolute;width:100%">
-                <div class="page pc" id="page2" style="height: 70vh; color:black">
-                    메차쿠차 살았다고 합니다
-                </div>
-                <div class="page pc" id="page3" style="height: 70vh;">
-                    두번째페이지
+            <div class="writting">
+                <img class="whitebox" id="wb1" src="./image/whitebox1.png" alt="소개문구 옆에 놓을 그림1"/>
+                <div class="inner-writting">
+                    생체제어계측 소개
                 </div>
             </div>
-            <div class="page mobile" id="page3">
-                두번째페이지
+            <div class="writting">
+                <div class="inner-writting">
+                    인공장기 소개
+                </div>
+                <img class="whitebox" id="wb2" src="./image/whitebox2.png" alt="소개문구 옆에 놓을 그림2"/>
             </div>
         </div>
+
+
         <div class="page" id="page4">Page 4</div>
         <div class="page" id="page5">Page 5</div>
     </div>
 
-    <div class="copyright"></div>
+    <div class="copyright">copyright 강원대학교 생체계측 인공장기 연구실</div>
 
     <script src="./js/aomr_lab.js"></script>
 </body>
