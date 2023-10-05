@@ -38,13 +38,24 @@ for(var i=0;i<menuitems.length;i++){
         location.href=`./${item.innerHTML}.html`;
     });
 }
-// for(var i=0;i<menuitems.length;i++){
-//     var element = menuitems[i];
-//     element.addEventListener('mouseover',()=>{
-//         element.style.cssText = "color:gray";
-//     });
-//이게 왜 오류가 나지
-// }
 
-//상단바 링크 연결
+        // for(var i=0;i<menuitems.length;i++){
+        //     var element = menuitems[i];
+        //     element.addEventListener('mouseover',()=>{
+        //         element.style.cssText = "color:gray";
+        //     });
+        //이게 왜 오류가 나지
+        // }
 
+//이메일에 마우스 올리면 색 변화
+var emails = document.querySelectorAll('.e-mail');
+
+for(var i=0;i<emails.length;i++){
+    let item = emails[i];
+    item.addEventListener('mouseover',()=>{
+        item.style.cssText = "color:gray";
+    });
+    item.addEventListener('mouseout',()=>{
+        item.style.cssText = "color:black";
+    });
+}

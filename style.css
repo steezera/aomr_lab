@@ -31,7 +31,7 @@ body, html {
 
 .page {
     width:100vw;
-    height: 100vh;
+    height: 93vh;
     background-color: rgb(255, 255, 255);
     padding: 0;
     color: var(--clr-light);
@@ -42,6 +42,7 @@ body, html {
 
 /* 첫번째 페이지 */
 #page1 {
+    height: 100vh;
     margin-top: auto;
     /* filter:blur(3px); */
     /* opacity: 0.9; */
@@ -66,6 +67,7 @@ body, html {
 
 #page5{
     background-color: white;
+    color:black;
 }
 
 .image-box {
@@ -102,7 +104,7 @@ body, html {
 
 .upperbox {
     width: 100%;
-    height: 6.6%;
+    height: 7vh;
     background-color: rgba(255, 255, 255, 0);
     padding: 0;
     color: white;
@@ -121,14 +123,11 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     height: 100%
 }
 
 .left {
     height: 100%;
-    /* width:25%; */
-    /* border: 3px solid var(--clr-dark); */
     box-sizing: border-box;    
     display: flex;
     flex-direction: row;
@@ -139,7 +138,6 @@ body, html {
     display: flex;
     flex-direction: row;
     height: 100%;
-    /* border: 3px solid var(--clr-dark); */
     box-sizing: border-box;
     align-items: center;
 }
@@ -152,10 +150,10 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menuitem {
-    height: 100%;
     box-sizing: border-box;
     align-items: center;
     font-family: sans-serif;
@@ -172,7 +170,7 @@ body, html {
 }
 
 .whitebox{
-    width:500px;
+    width:70vh;
     height: 70vh;
 }
 #wb1{
@@ -181,6 +179,24 @@ body, html {
 #wb2{
     padding-right: 5vw;
 }
+
+.imgbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin:5vw;
+    margin-left:10vw;
+}
+#professor-img{
+    width:24vw;
+    height:32vw;
+    border-radius: 2vw;
+    border-width: 1vw;
+    border-style: solid;
+    border-color:white;
+}
+
 .page.pc{
     height: 70vh;
 }
@@ -195,9 +211,26 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
+.inner{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner-title{
+    text-align: center;
+    font-size: 5vh;
+}
 .inner-writting{
-    padding:5vw;
-    font-size:large;
+    padding-left:5vw;
+    padding-right: 5vw;
+    padding-top:5vh;
+    font-size:larger;
+}
+
+.e-mail{
+    text-decoration: none;
+    color:black;
 }
 
 @media(max-width:500px){
