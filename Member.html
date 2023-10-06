@@ -8,7 +8,8 @@
     <meta name="description" content="강원대학교 인공장기, 메디컬 로보틱스(생체제어계측)연구실.">
     
     <link rel="icon" type="image/png" href="./favicon.png" sizes="32x10">
-    <link rel = 'stylesheet' href = "style.css">
+    <link rel = 'stylesheet' href = "./css/style.css">
+    <link rel = 'stylesheet' href = "./css/member.css">
 </head>
 <body>
 
@@ -44,51 +45,303 @@
             </div>
         </div>
 
-        <div class="page" id="page2" style="color:black">
-            <div class="inner-title">
-                담당교수 소개
+
+        <div class="member-page" id="professor-page">
+            <!-- 교수, 학생 등 종목 이름 나타내는 칸 -->
+            <div class="member-title" id="professer-title">
+                교수
             </div>
-            <div class="writting">
-                <div class="imgbox">
-                    <img
-                    class="whitebox"
-                    id="professor-img"
-                    src="https://mechanical.kangwon.ac.kr/app/common/attach/image/thumb_302_1633681110000.do">
-                    <div class="inner-title">
-                        최성욱
+
+            <div class="card-placeholder">
+            <!-- 사람 한명의 설명이 들어가는 카드. 사진, 이름, 과정, 연구분야, 구글 스칼라, 실적-->
+                <div class="member-card" id="professor-card">
+                    <!-- 사진 들어가는자리, 그 안에 사진 -->
+                    <div class="member-card-photoplace">
+                        <img src="https://mechanical.kangwon.ac.kr/app/common/attach/image/thumb_302_1633681110000.do" 
+                        alt="최성욱" 
+                        class="member-card-photo">
                     </div>
-                    <div class="inner-writting" style="display:flex;flex-direction: column;align-items:first baseline;">
-                        <div class="contact" style="text-align: left;">
-                            이메일 <a class="e-mail" href="mailto:swchoe@kangwon.ac.kr" title="메일보내기">
-                                swchoe@kangwon.ac.kr</a>
-                            <br/>연락처 033-250-6319
+                    <!-- 이름, 과정, 연구분야, 구글 스칼라, 실적들어가는 자리 -->
+                    <div class="member-card-introduce">
+                        <div class="member-card-introduce-name">
+                            <p>최성욱
+                                <span class="member-card-introduce-curriculum">
+                                    .담당교수
+                                </span>
+                            </p>
                         </div>
+
+
+                        <div class="member-card-introduce-other">
+                            swchoe@kangwon.ac.kr
+                        </div>
+                        <div class="member-card-introduce-other">
+                            인공장기 의용계측 생체제어
+                        </div>
+                        <div class="member-card-introduce-other">
+                            033-250-6319
+                        </div>
+                        <div class="member-card-introduce-other">
+                            <a href="https://mechanical.kangwon.ac.kr/mechanical/professor/professor.do?mode=view&key=$cms$IwBgTAnAbCQ&" 
+                            class="professor-link"
+                            target="_blank">
+                            소개
+                            </a>
+                        </div>
+                        
                     </div>
+                    <div class="member-card-introduce" id="member-card-introduce-professor">
+                        
+                        <div class="member-card-introduce-another">
+                            학력
+                            <ul class="member-card-introduce-another in">
+                                <li>연세대학교 의용전자공학과 공학사</li>
+                                <li>서울대학교 협동과정의용생체공학전공 공학석사</li>
+                                <li>서울대학교 협동과정의용생체공학전공 공학박사</li>
+                            </ul>
+                        </div>
+                        <div class="member-card-introduce-another">
+                            주요경력
+                            <ul class="member-card-introduce-another in">
+                                <li>2009.6~         <pre>주식회사 리브라하트 대표이사</li>
+                                <li>1997.3~2006.2   <pre></pre>서울대학교병원 의공학과 의료기기연구소</li>
+                            </ul>
+                        </div>
+                        <div class="member-card-introduce-another">
+                            연구실적 <a href=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="divider out"><div class="divider in"></div></div>
+
+
+
+
+        <div class="member-page">
+            <!-- 교수, 학생 등 종목 이름 나타내는 칸 -->
+            <div class="member-title">
+                학생
+            </div>
+
+            <div class="card-placeholder">
+            <!-- 사람 한명의 설명이 들어가는 카드. 사진, 이름, 과정, 연구분야, 구글 스칼라, 실적-->
+                <div class="member-card">
+                    <!-- 사진 들어가는자리, 그 안에 사진 -->
+                    <div class="member-card-photoplace">
+                        <img src="./image/member-photo/temp-person.png" 
+                        alt="임시사진" 
+                        class="member-card-photo">
+                    </div>
+                    <!-- 이름, 과정, 연구분야, 구글 스칼라, 실적들어가는 자리 -->
+                    <div class="member-card-introduce">
+                        <div class="member-card-introduce-name">
+                            <p>이의인
+                                <span class="member-card-introduce-curriculum">
+                                    .학부연구생
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="member-card-introduce-other">
+                            연구분야
+                        </div>
+                        <div class="member-card-introduce-other">
+                            이메일
+                        </div>
+                        <div class="member-card-introduce-other">
+                            번호
+                        </div>
+                        <div class="member-card-introduce-other">
+                            <a 
+                            href="https://mechanical.kangwon.ac.kr/mechanical/lab/lab06.do" 
+                            class="link"
+                            target="_blank">
+                            넣고싶은거 있으면 넣으면 됨
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="member-card">
+                    <!-- 사진 들어가는자리, 그 안에 사진 -->
+                    <div class="member-card-photoplace">
+                        <img src="./image/member-photo/temp-person.png" 
+                        alt="임시사진" 
+                        class="member-card-photo">
+                    </div>
+                    <!-- 이름, 과정, 연구분야, 구글 스칼라, 실적들어가는 자리 -->
+                    <div class="member-card-introduce">
+                        <div class="member-card-introduce-name">
+                            <p>이의인
+                                <span class="member-card-introduce-curriculum">
+                                    .학부연구생
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="member-card-introduce-other">
+                            연구분야
+                        </div>
+                        <div class="member-card-introduce-other">
+                            이메일
+                        </div>
+                        <div class="member-card-introduce-other">
+                            번호
+                        </div>
+                        <div class="member-card-introduce-other">
+                            <a 
+                            href="https://mechanical.kangwon.ac.kr/mechanical/lab/lab06.do" 
+                            class="link"
+                            target="_blank">
+                            넣고싶은거 있으면 넣으면 됨
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="member-card">
+                    <!-- 사진 들어가는자리, 그 안에 사진 -->
+                    <div class="member-card-photoplace">
+                        <img src="./image/member-photo/temp-person.png" 
+                        alt="임시사진" 
+                        class="member-card-photo">
+                    </div>
+                    <!-- 이름, 과정, 연구분야, 구글 스칼라, 실적들어가는 자리 -->
+                    <div class="member-card-introduce">
+                        <div class="member-card-introduce-name">
+                            <p>이의인
+                                <span class="member-card-introduce-curriculum">
+                                    .학부연구생
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="member-card-introduce-other">
+                            연구분야
+                        </div>
+                        <div class="member-card-introduce-other">
+                            이메일
+                        </div>
+                        <div class="member-card-introduce-other">
+                            번호
+                        </div>
+                        <div class="member-card-introduce-other">
+                            <a 
+                            href="https://mechanical.kangwon.ac.kr/mechanical/lab/lab06.do" 
+                            class="link"
+                            target="_blank">
+                            넣고싶은거 있으면 넣으면 됨
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="member-card">
+                    <!-- 사진 들어가는자리, 그 안에 사진 -->
+                    <div class="member-card-photoplace">
+                        <img src="./image/member-photo/temp-person.png" 
+                        alt="임시사진" 
+                        class="member-card-photo">
+                    </div>
+                    <!-- 이름, 과정, 연구분야, 구글 스칼라, 실적들어가는 자리 -->
+                    <div class="member-card-introduce">
+                        <div class="member-card-introduce-name">
+                            <p>이의인
+                                <span class="member-card-introduce-curriculum">
+                                    .학부연구생
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="member-card-introduce-other">
+                            연구분야
+                        </div>
+                        <div class="member-card-introduce-other">
+                            이메일
+                        </div>
+                        <div class="member-card-introduce-other">
+                            번호
+                        </div>
+                        <div class="member-card-introduce-other">
+                            <a 
+                            href="https://mechanical.kangwon.ac.kr/mechanical/lab/lab06.do" 
+                            class="link"
+                            target="_blank">
+                            넣고싶은거 있으면 넣으면 됨
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+
                 </div>
                 
-                <div class="inner">
-                    <div class="inner-title">
-                        이력
+                <div class="member-card">
+                    <!-- 사진 들어가는자리, 그 안에 사진 -->
+                    <div class="member-card-photoplace">
+                        <img src="./image/member-photo/temp-person.png" 
+                        alt="임시사진" 
+                        class="member-card-photo">
                     </div>
-                    <div class="inner-writting" style="display:flex;flex-direction: column;align-items:left;">
-                        <ul>
-                            
-                        </ul>
+                    <!-- 이름, 과정, 연구분야, 구글 스칼라, 실적들어가는 자리 -->
+                    <div class="member-card-introduce">
+                        <div class="member-card-introduce-name">
+                            <p>이의인
+                                <span class="member-card-introduce-curriculum">
+                                    .학부연구생
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="member-card-introduce-other">
+                            연구분야
+                        </div>
+                        <div class="member-card-introduce-other">
+                            이메일
+                        </div>
+                        <div class="member-card-introduce-other">
+                            번호
+                        </div>
+                        <div class="member-card-introduce-other">
+                            <a 
+                            href="https://mechanical.kangwon.ac.kr/mechanical/lab/lab06.do" 
+                            class="link"
+                            target="_blank">
+                            넣고싶은거 있으면 넣으면 됨
+                            </a>
+                        </div>
+                        
                     </div>
+                    
+
                 </div>
+
+                
             </div>
+
         </div>
-        <div class="page" id="page3">
-            박사과정
-        </div>
-        <div class="page" id="page4">
-            석사과정
-        </div>
-        <div class="page" id="page5">학부연구생</div>
-    </div>
+        
 
     <div class="copyright"></div>
 
     <script src="./js/aomr_lab.js"></script>
+    <script src="./js/Member.js"></script>
 </body>
 </html>
