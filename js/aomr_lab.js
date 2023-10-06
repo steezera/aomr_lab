@@ -1,6 +1,6 @@
 var changedY = 100;
 
-//상단바 색 변화 구현
+//상단바 색 변화 구현, 맨 위로 
 window.addEventListener('scroll',()=>{
     let changed_color_navbar = document.querySelector('.upperbox');
 
@@ -13,6 +13,13 @@ window.addEventListener('scroll',()=>{
       changed_color_navbar.style.cssText = cssText;
   }else{
     changed_color_navbar.style.cssText = "background-color:rgba(255,255,255,1);color:black";
+    }
+
+    let up = document.querySelector('.up');
+    if(window.scrollY > (window.screenY)*50/100){
+        up.style.cssText = "color:rgba(0,0,0,1);";
+    }else{
+        up.style.cssText = "color:rgba(0,0,0,0);";
     }
 });
 
@@ -46,6 +53,13 @@ for(var i=0;i<menuitems.length;i++){
         //     });
         //이게 왜 오류가 나지
         // }
+
+
+//로고 클릭하면 다시 페이지
+var logo = document.querySelector('.logo');
+logo.addEventListener('click',()=>{
+    location.href='./index.html';
+})
 
 //이메일에 마우스 올리면 색 변화
 var emails = document.querySelectorAll('.e-mail');
