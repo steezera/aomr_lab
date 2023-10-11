@@ -25,7 +25,7 @@ for(var i=1;i<=imageList;i++){
 
         <div class="divider out"><div class="divider in"></div></div>
         <div class='gallery-image-container'>
-            <img src = './image/member-photo/${i}.jpeg' class='gallery-image'>
+            <img src = './image/gallery/${i}.jpeg' class='gallery-image'>
         </div>
     `;
 }
