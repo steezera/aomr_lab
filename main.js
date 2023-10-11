@@ -18,8 +18,8 @@ var app = http.createServer((request, response)=>{
     // }else{
     //     response.end(fs.readFileSync(__dirname + fileName));
     // }
-
-    response.end(fs.readFileSync(__dirname + fileName));
+    console.log(decodeURI(fileName));
+    response.end(fs.readFileSync(__dirname + decodeURI(fileName)));
 });
 
 app.listen(3000);

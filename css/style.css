@@ -277,11 +277,14 @@ body, html {
 
 .divider .out{
     height:10vh;
+    width: 100vw;
     background-color:white;
     display:block;
 }
 .divider .in{
     height: 2px;
-    margin: 5vw;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     background-color: rgba(160, 149, 149, 0.46);
 }

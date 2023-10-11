@@ -22,6 +22,10 @@ var imageList = 13;
 
 for(var i=1;i<=imageList;i++){
     galleryContainer.innerHTML += `
-        <img src = './gallery/${i}.jpeg' class='gallery-image'>
+
+        <div class="divider out"><div class="divider in"></div></div>
+        <div class='gallery-image-container'>
+            <img src = './image/member-photo/${i}.jpeg' class='gallery-image'>
+        </div>
     `;
 }
