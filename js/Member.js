@@ -11,8 +11,17 @@ var member_num = 5;
 var person_name =   ['이의인'    ,'이의인'   ,'이의인'   ,'이의인'   ,'이의인'       ];
 var person_curr =   ['학부연구생' ,'학부연구생','학부연구생','학부연구생','학부연구생'     ];
 var person_major=   ['연구분야'   ,'연구분야'  ,'연구분야'  ,'연구분야'  ,'연구분야'    ];
-var person_email=   ['이메일'    ,'이메일'     ,'이메일'     ,'이메일'     ,'이메일' ];
-var person_phone=   ['번호'      ,'번호'      ,'번호'      ,'번호'      ,'번호'   ];
+var person_email=   ['dldmldls77@gmail.com'
+,'dldmldls77@gmail.com'
+,'dldmldls77@gmail.com'
+,'dldmldls77@gmail.com'
+,'dldmldls77@gmail.com'
+];
+var person_phone=   ['010-2383-7702'
+,'010-2383-7702'      
+,'010-2383-7702'      
+,'010-2383-7702'      
+,'010-2383-7702'];
 var person_link =   ['http://itempage3.auction.co.kr/DetailView.aspx?itemno=A602688703',
 'http://itempage3.auction.co.kr/DetailView.aspx?itemno=A602688703',
 'http://itempage3.auction.co.kr/DetailView.aspx?itemno=A602688703',
@@ -22,7 +31,6 @@ var person_link =   ['http://itempage3.auction.co.kr/DetailView.aspx?itemno=A602
 
 var card_placeholder = document.querySelector('.card-placeholder.students');
 for(var i=0;i<member_num;i++){
-    console.log(person_name[i]);
     let link = null
     if(person_link[i] != null){
         link = '소개페이지';
