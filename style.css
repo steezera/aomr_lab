@@ -131,7 +131,7 @@ body, html {
     background-color: rgba(255, 255, 255, 0);
     padding: 0;
     color: white;
-    text-align: left;
+    /* text-align: left; */
     /* border: 15px solid var(--clr-upper); */
     /* opacity: 0; */
     box-sizing: border-box;
@@ -145,7 +145,7 @@ body, html {
 .upperbox-items{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 100%
 }
 
@@ -167,12 +167,11 @@ body, html {
 
 .menus {
     height: 100%;
-    width:30%;
     /* border: 3px solid var(--clr-dark); */
     box-sizing: border-box;    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -286,5 +285,22 @@ body, html {
     width: 80vw;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin: 5vw;
     background-color: rgba(160, 149, 149, 0.46);
+}
+/* 갤러리에서 사진들 들어있는 틀 */
+
+
+#title{
+width:50vw;
+}
+
+#main{
+width:50vw;
+height:20vh;
+}
+
+textarea{
+    width:50vw;
+    height:10vh;
 }
